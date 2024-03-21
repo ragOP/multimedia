@@ -3,7 +3,7 @@ import './App.scss';
 
 
 import Fifth_SP from './pages/5_sp';
-
+import Apple from './pages/Apple'
 
 function App() {
   
@@ -14,7 +14,8 @@ function App() {
           {/* c */}
      
         
-          <Route index element = {<Fifth_SP />} />
+          <Route index element = {<Apple />} />
+  
 
      
         </Routes>
