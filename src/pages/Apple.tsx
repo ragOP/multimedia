@@ -287,14 +287,14 @@ export default function Fifth_SP() {
           <div className="top-description-5">
           ¡Estás aprobado para recibir hasta $50,000+ para cubrir el costo de tus compras de alimentos, alquiler, facturas, deudas y cualquier otra cosa que necesites!
           </div>
-          <div className="spots-count">Lugares restantes: 4</div>
+          {/* <div className="spots-count">Lugares restantes: 4</div> */}
           <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
           <a href="https://lpntrkc.com/?o=309028&a=3698&s1=FILTERFROMDEBT">
             <div className="call-btn" onClick={handleCall}>
             HAGA CLIC AQUÍ
             </div>
           </a>
-          <div className="sub-title">Nosotras hemos reservado tu lugar</div>
+          {/* <div className="sub-title">Nosotras hemos reservado tu lugar</div> */}
           <div className="sub-description">
             Debido al alto volumen de llamadas, su agente oficial está esperando
             solo 3 minutos, luego su lugar no estará reservado.
