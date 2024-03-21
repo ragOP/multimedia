@@ -204,9 +204,10 @@ export default function Fifth_SP() {
       setStep("Revisando sus respuestas...");
       topScroll("top");
     }
-    setTimeout(()=>{
-        setShowAdditionalDiv(true);
-    },5000)
+    setShowAdditionalDiv(true);
+    // setTimeout(()=>{
+        
+    // },5000)
    
   };
 
@@ -257,54 +258,67 @@ export default function Fifth_SP() {
           {step}
         </div>
       ) : (
+       
         <div className="checking">
-          <div className="congrats">¡Felicitaciones, USTED CALIFICA!</div>
-          <div className="top-description-5">
-            ¡Haga una llamada rápida para reclamar su alivio de deuda de hasta
-            el 100 % ahora!
-          </div>
-          <div className="spots-count">Lugares restantes: 4</div>
-          <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
-          <a href="tel:+1(877)657-4615">
-            <div className="call-btn" onClick={handleCall}>
-              CALL (877) 657-4615
+        {showAdditionalDiv ? (
+          <>
+            <div className="congrats">¡Atención! No calificas para el alivio de la deuda PERO,</div>
+            <div className="top-description-5">
+              ¡Estás aprobado para recibir hasta $50,000+ para cubrir el costo de tus compras de alimentos, alquiler, facturas, deudas y cualquier otra cosa que necesites!
             </div>
-          </a>
-          <div className="sub-title">Nosotras hemos reservado tu lugar</div>
-          <div className="sub-description">
-            Debido al alto volumen de llamadas, su agente oficial está esperando
-            solo 3 minutos, luego su lugar no estará reservado.
-          </div>
-          <div className="timer">
-            <div className="timer-cell">{min}</div>
-            <div className="timer-cell">:</div>
-            <div className="timer-cell">{second}</div>
-          </div>
-        </div>
+            <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
+            <a href="https://lpntrkc.com/?o=309028&a=3698&s1=FILTERFROMDEBT">
+              <div className="call-btn" onClick={handleCall}>
+                HAGA CLIC AQUÍ
+              </div>
+            </a>
+            <div className="sub-description">
+              Debido al alto volumen de llamadas, su agente oficial está esperando solo 3 minutos, luego su lugar no estará reservado.
+            </div>
+            <div className="timer">
+              <div className="timer-cell">{min}</div>
+              <div className="timer-cell">:</div>
+              <div className="timer-cell">{second}</div>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="congrats">¡Felicitaciones, USTED CALIFICA!</div>
+            <div className="top-description-5">
+              ¡Haga una llamada rápida para reclamar su alivio de deuda de hasta el 100 % ahora!
+            </div>
+            <div className="spots-count">Lugares restantes: 4</div>
+            <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
+            <a href="tel:+1(877)657-4615">
+              <div className="call-btn" onClick={handleCall}>
+                CALL (877) 657-4615
+              </div>
+            </a>
+            <div className="sub-title">Nosotras hemos reservado tu lugar</div>
+            <div className="sub-description">
+              Debido al alto volumen de llamadas, su agente oficial está esperando solo 3 minutos, luego su lugar no estará reservado.
+            </div>
+            <div className="timer">
+              <div className="timer-cell">{min}</div>
+              <div className="timer-cell">:</div>
+              <div className="timer-cell">{second}</div>
+            </div>
+          </>
+        )}
+      </div>
+       
+
+
       )}
-       {showAdditionalDiv &&  <div className="checking">
-          <div className="congrats">¡Atención! No calificas para el alivio de la deuda PERO,</div>
-          <div className="top-description-5">
-          ¡Estás aprobado para recibir hasta $50,000+ para cubrir el costo de tus compras de alimentos, alquiler, facturas, deudas y cualquier otra cosa que necesites!
-          </div>
-          {/* <div className="spots-count">Lugares restantes: 4</div> */}
-          <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
-          <a href="https://lpntrkc.com/?o=309028&a=3698&s1=FILTERFROMDEBT">
-            <div className="call-btn" onClick={handleCall}>
-            HAGA CLIC AQUÍ
-            </div>
-          </a>
-          {/* <div className="sub-title">Nosotras hemos reservado tu lugar</div> */}
-          <div className="sub-description">
-            Debido al alto volumen de llamadas, su agente oficial está esperando
-            solo 3 minutos, luego su lugar no estará reservado.
-          </div>
-          <div className="timer">
-            <div className="timer-cell">{min}</div>
-            <div className="timer-cell">:</div>
-            <div className="timer-cell">{second}</div>
-          </div>
-        </div>}
+      
+       
+
+
+
+
+
+
+
       <div className="footer">
         <div className="terms">Terms & Conditions | Privacy Policy</div>
         <div className="copyright">
