@@ -370,7 +370,7 @@ useEffect(() => {
               ¡Estás aprobado para recibir hasta $50,000+ para cubrir el costo de tus compras de alimentos, alquiler, facturas, deudas y cualquier otra cosa que necesites!
             </div>
             <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
-            <a href="https://lpntrkc.com/?o=309028&a=3698&s1=FILTERFROMDEBT">
+            <a >
               <div className="call-btn" onClick={handleCall}>
                 HAGA CLIC AQUÍ
               </div>
