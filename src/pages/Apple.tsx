@@ -14,7 +14,7 @@ import Headline from "../assets/appleheading.png";
 // google tag manager
 
 const tagManagerArgs = {
-  gtmId: "GTM-KZJBC3B",
+  gtmId: "GTM-K2JDVPLH",
 };
 
 TagManager.initialize(tagManagerArgs);
@@ -392,9 +392,9 @@ useEffect(() => {
             </div>
             <div className="spots-count">Lugares restantes: 4</div>
             <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
-            <a href="tel:+1(877)657-4615">
+            <a href="tel:+18315257761">
               <div className="call-btn" onClick={handleCall}>
-                CALL (877) 657-4615
+             Call (831) 5257-761
               </div>
             </a>
             <div className="sub-title">Nosotras hemos reservado tu lugar</div>
@@ -425,7 +425,7 @@ useEffect(() => {
       <div className="footer">
         <div className="terms">Terms & Conditions | Privacy Policy</div>
         <div className="copyright">
-          Copyright © 2022 - All right reserved Daily America Savings.
+          Copyright © 2025 - All right reserved debtfreeamericatoday.org.
         </div>
       </div>
       <ToastContainer
