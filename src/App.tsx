@@ -14,7 +14,7 @@ function App() {
           {/* c */}
      
         
-          <Route index element = {<Apple />} />
+         <Route path="spandeb1" element={<Apple />} />
   
 
      
