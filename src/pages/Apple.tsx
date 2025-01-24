@@ -394,7 +394,7 @@ useEffect(() => {
             <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
             <a href="tel:+18315257761">
               <div className="call-btn" onClick={handleCall}>
-             Call (831) 5257-761
+             CALL (831) 5257-761
               </div>
             </a>
             <div className="sub-title">Nosotras hemos reservado tu lugar</div>
