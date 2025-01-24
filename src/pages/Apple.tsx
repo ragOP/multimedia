@@ -312,60 +312,55 @@ useEffect(() => {
     // },5000)
    
   };
-
-  return (
-    
-    <div>
-      <ToastContainer />
-      <div className="top-sticky-blue" id="top">
-        Emergency Relief Program
-      </div>
-      {step === "process" ? (
-        <>
-          <div className="main-container-5">
-            <div className="main-descrition-5">
-              {/* <div className='main-des-title-6'><b>Finalmente, los deudores están obteniendo hasta un<span style={{backgroundColor:"#fde047"}}> 100% de perdón financiero</span> bajo este programa respaldado por abogados, ¡Aquí está cómo!</b></div> */}
-              <img className="topic-img-larger" src={Headline} alt="head" />
-              <img className="topic-img-middle" src={Head_bg} alt="head" />
-              <div className="main-des-5">
-                Los estadounidenses con más de $10,000 en cuotas obtienen hasta
-                un 100% de condonación financiera bajo este programa de ayuda de
-                emergencia.
-              </div>
-              <div className="main-des-5" style={{ marginTop: "1rem" }}>
-                <b>
-                  La oportunidad de inscribirse en este programa finaliza esta
-                  noche a las 9:00P.M.
-                </b>
-                , Verifica tu Elegibilidad Antes de que el Tiempo Acabe!
-              </div>
-              {/* <div className='main-des-5' style = {{marginTop:"1rem"}}><b>Simplemente responda las siguientes preguntas:</b></div> */}
+return (
+  <div>
+    <ToastContainer />
+    <div className="top-sticky-blue" id="top">
+      Emergency Relief Program
+    </div>
+    {step === "process" ? (
+      <>
+        <div className="main-container-5">
+          <div className="main-descrition-5">
+            <img className="topic-img-larger" src={Headline} alt="head" />
+            <img className="topic-img-middle" src={Head_bg} alt="head" />
+            <div className="main-des-5">
+              Los estadounidenses con más de $10,000 en cuotas obtienen hasta
+              un 100% de condonación financiera bajo este programa de ayuda de
+              emergencia.
             </div>
-            <div className="survey">
-              <div className="quiz-5" id="btn">
-                {quiz}
+            <div className="main-des-5" style={{ marginTop: "1rem" }}>
+              <b>
+                La oportunidad de inscribirse en este programa finaliza esta
+                noche a las 9:00P.M.
+              </b>
+              , Verifica tu Elegibilidad Antes de que el Tiempo Acabe!
+            </div>
+          </div>
+          <div className="survey">
+            <div className="quiz-5" id="btn">
+              {quiz}
+            </div>
+            <div className="answer">
+              <div className="answer-btn-5" onClick={handleQuizP}>
+                Sí
               </div>
-              <div className="answer">
-                <div className="answer-btn-5" onClick={handleQuizP}>
-                  Sí
-                </div>
-                <div className="answer-btn-5" onClick={handleQuizN}>
-                  No
-                </div>
+              <div className="answer-btn-5" onClick={handleQuizN}>
+                No
               </div>
             </div>
           </div>
-        </>
-      ) : step !== "process" && step !== "completed" ? (
-        <div className="checking" style={{ fontWeight: "700" }}>
-          {step}
         </div>
-      ) : (
-       
-        <div className="checking">
+      </>
+    ) : step !== "process" && step !== "completed" ? (
+      <div className="checking" style={{ fontWeight: "700" }}>
+        {step}
+      </div>
+    ) : (
+      <div className="checking">
         {showAdditionalDiv ? (
           <>
-           <div className="congrats">¡Felicitaciones, USTED CALIFICA!</div>
+            <div className="congrats">¡Felicitaciones, USTED CALIFICA!</div>
             <div className="top-description-5">
               ¡Haga una llamada rápida para reclamar su alivio de deuda de hasta el 100 % ahora!
             </div>
@@ -373,7 +368,7 @@ useEffect(() => {
             <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
             <a href="tel:+18315257761">
               <div className="call-btn" onClick={handleCall}>
-             CALL (831) 5257-761
+                CALL (831) 5257-761
               </div>
             </a>
             <div className="sub-title">Nosotras hemos reservado tu lugar</div>
@@ -385,9 +380,6 @@ useEffect(() => {
               <div className="timer-cell">:</div>
               <div className="timer-cell">{second}</div>
             </div>
-          </>
-        )}
-      </div>
           </>
         ) : (
           <>
@@ -399,7 +391,7 @@ useEffect(() => {
             <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
             <a href="tel:+18315257761">
               <div className="call-btn" onClick={handleCall}>
-             CALL (831) 5257-761
+                CALL (831) 5257-761
               </div>
             </a>
             <div className="sub-title">Nosotras hemos reservado tu lugar</div>
@@ -414,35 +406,23 @@ useEffect(() => {
           </>
         )}
       </div>
-       
-
-
-      )}
-      
-       
-
-
-
-
-
-
-
-      <div className="footer">
-        <div className="terms">Terms & Conditions | Privacy Policy</div>
-        <div className="copyright">
-          Copyright © 2025 - All right reserved debtfreeamericatoday.org.
-        </div>
+    )}
+    <div className="footer">
+      <div className="terms">Terms & Conditions | Privacy Policy</div>
+      <div className="copyright">
+        Copyright © 2025 - All right reserved debtfreeamericatoday.org.
       </div>
-      <ToastContainer
-        position="bottom-right"
-        autoClose={5000}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-      />
     </div>
-  );
-}
+    <ToastContainer
+      position="bottom-right"
+      autoClose={5000}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+    />
+  </div>
+);
+
