@@ -14,7 +14,7 @@ import Headline from "../assets/appleheading.png";
 // google tag manager
 
 const tagManagerArgs = {
-  gtmId: "GTM-K2JDVPLH",
+  gtmId: "GTM-W6T6NGZR",
 };
 
 TagManager.initialize(tagManagerArgs);
