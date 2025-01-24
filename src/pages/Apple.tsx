@@ -312,6 +312,7 @@ useEffect(() => {
     // },5000)
    
   };
+
 return (
   <div>
     <ToastContainer />
@@ -424,5 +425,6 @@ return (
       pauseOnHover
     />
   </div>
-);
-
+)
+// Closing the component function
+}
