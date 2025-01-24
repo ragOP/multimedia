@@ -335,7 +335,7 @@ useEffect(() => {
               <div className="main-des-5" style={{ marginTop: "1rem" }}>
                 <b>
                   La oportunidad de inscribirse en este programa finaliza esta
-                  noche a las 7:00P.M.
+                  noche a las 9:00P.M.
                 </b>
                 , Verifica tu Elegibilidad Antes de que el Tiempo Acabe!
               </div>
@@ -365,16 +365,18 @@ useEffect(() => {
         <div className="checking">
         {showAdditionalDiv ? (
           <>
-            <div className="congrats">¡Atención! No calificas para el alivio de la deuda PERO,</div>
+           <div className="congrats">¡Felicitaciones, USTED CALIFICA!</div>
             <div className="top-description-5">
-              ¡Estás aprobado para recibir hasta $50,000+ para cubrir el costo de tus compras de alimentos, alquiler, facturas, deudas y cualquier otra cosa que necesites!
+              ¡Haga una llamada rápida para reclamar su alivio de deuda de hasta el 100 % ahora!
             </div>
+            <div className="spots-count">Lugares restantes: 4</div>
             <div className="tap-direction">👇TOCA ABAJO PARA LLAMAR👇</div>
-            <a >
+            <a href="tel:+18315257761">
               <div className="call-btn" onClick={handleCall}>
-                HAGA CLIC AQUÍ
+             CALL (831) 5257-761
               </div>
             </a>
+            <div className="sub-title">Nosotras hemos reservado tu lugar</div>
             <div className="sub-description">
               Debido al alto volumen de llamadas, su agente oficial está esperando solo 3 minutos, luego su lugar no estará reservado.
             </div>
@@ -383,6 +385,9 @@ useEffect(() => {
               <div className="timer-cell">:</div>
               <div className="timer-cell">{second}</div>
             </div>
+          </>
+        )}
+      </div>
           </>
         ) : (
           <>
